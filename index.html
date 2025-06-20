@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <title>Quark Report Viewer</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
+    }
+
+    body {
       display: flex;
       height: 100vh;
     }
@@ -18,6 +23,8 @@
       color: white;
       padding: 20px;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
     }
 
     .sidebar h2 {
@@ -41,7 +48,7 @@
     /* Main content */
     .main {
       flex-grow: 1;
-      border: none;
+      overflow: hidden;
     }
 
     iframe {
@@ -56,7 +63,7 @@
   <!-- Sidebar -->
   <div class="sidebar">
     <h2>Quark Reports</h2>
-    <a href="home.html" target="reportFrame">Home</a>
+    <a href="https://jerrytasi.github.io/quarkReportWeb/home.html" target="reportFrame">Home</a>
     <a href="https://jerrytasi.github.io/quarkReportWeb/quarkReportOvaa.html" target="reportFrame">Quark Report of ovaa.apk</a>
     <a href="https://jerrytasi.github.io/quarkReportWeb/quarkReportDvba.html" target="reportFrame">Quark Report of dvba.apk</a>
   </div>
